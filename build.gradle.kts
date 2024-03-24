@@ -10,9 +10,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation(kotlin("test-junit", "1.9.23"))
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.9.23")
     testImplementation("com.codeborne:selenide:7.2.1")
+    testImplementation ("org.seleniumhq.selenium:selenium-java:4.18.1")
+    testImplementation ("org.junit.jupiter:junit-jupiter-engine:5.10.0")
 }
 
 tasks.test {
